@@ -1,0 +1,94 @@
+body {
+	
+	height: 100vh;
+    width: 100%;
+	zoom: 105%;
+	min-height: 500px;
+	max-height: 600px;
+	margin-top: 50px;
+    background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
+	font-family: Calibri;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.header {
+	
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	animation-name: xd;
+	animation-duration: 1s;
+}
+
+@keyframes xd {
+	
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.button {
+	
+	text-align: center;
+	margin-top: 25px;
+	transition: 0.25s;
+}
+
+.borderButton {
+	
+	border-right: solid #2B60DE 3px;
+	border-left: solid #1F45FC 3px;
+	border-top: solid #2554C7 3px;
+	border-bottom: solid #2B65EC 3px;
+	border-radius: 15px;
+	padding: 10px;
+	transition: 0.25s;
+    cursor: pointer;
+	outline: none;
+	color: white;
+	width: 180px;
+	margin-left: auto;
+	margin-right: auto;
+	transition: all 0.5s;
+    cursor: pointer;
+	font-size: 15px;
+	width: 115px;
+	font-size: 25px;
+	background-color: black
+}
+
+.borderButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.borderButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.borderButton:hover span {
+  padding-right: 25px;
+  font-size: 25px;
+}
+
+.borderButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.borderButton:hover {
+	
+	border-right: solid #4AA02C 3px;
+	border-left: solid #87F717 3px;
+	border-top: solid  #348017 3px;
+	border-bottom: solid #7FE817 3px;
+	margin-top: 8px;
+	transition: 0.5s;
+}
